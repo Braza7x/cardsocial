@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+*{
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+body{
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(#66E627, #1da126);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 540px;
+    /* height: 50px; */
+    background-color: rgba(9, 243, 24, .5);
+    border-radius: 16px;
+
+    /* alinhamento do itens */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* sombra do box */
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.profile-img{
+    width: 120px;
+    border-radius: 50%;
+    border:#1da126 5px solid;
+
+    /* sombra do box */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    /* direnciona o img no eixo y */
+    transform: translateY(-65px);
+}
+
+.container-text{
+    margin-top: -40px; /*Espaçamento na parte superior para criar um espaço entre a borda e o texto*/
+}
+
+h1.nome{
+    margin: 0; /*Retira o espaçamento da margin*/
+    text-shadow:rgba(0, 0, 0, .6) 0px 5px 10px; /*Cria uma sombra em volta do texto, a prioridade precisa de: 
+    (cor, deslocamento horizontal, deslocamento vertical, raio de desfoque)*/
+}
+
+h3.desc{
+    font-weight: 400; /* Ajusta o tamanho da fonte*/
+    text-shadow: rgba(0, 0, 0, 6) 0px 5px 10px; /*Cria uma sombra no texto*/
+}
+
+.andress-icon{
+    width: 22px; /*Largura do caixa*/
+    filter: brightness(10); /* altera a opacidade da imagem escala de */
+}
+
+.socials{
+    margin: 30px 0; /*margem da tag 'div' */
+}
+
+.socials a{
+    margin-right: 48px; /*margem da tag 'a' do lado */
+}
+
+.socials a:last-child{ /*':last-child' é um pseudo-elemento CSS que seleciona o último elemento filho*/
+    margin-right: 0px; /* retira a margem do último ícone lado esquerdo */
+    
+
+}
+
+.socials img{
+    width: 50px; /*largura da tag 'img' */
+    transition: all .3s; /*velocidade de transição de efeito*/
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; /*cria uma sombra no texto*/
+    border-radius: 50% /*cria uma borda arredontada para a tag */
+}
+
+.socials img:hover{/*pseudo-classe que permite aplicar estilos a um elemento html quando o cursor do mouse pasa por cima dele. */
+    transform: scale(110%); /* aumenta o tamanho do icone para o valor informado */
+}
+
+.social img:active { /* pseudo-classe que permite aplicar estilos a um elemento html no exato momento em que ele está sendo ativado. */
+    transform: scale(100%); /*diminui o ícone para o tamanho informado. */
+}
